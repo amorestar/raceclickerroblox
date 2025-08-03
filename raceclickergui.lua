@@ -158,7 +158,7 @@ local themes = {
 }
 
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "⚡ Race Clicker - Auto"
+ScreenGui.Name = "⚡ Autofarm systems"
 ScreenGui.Parent = not game:GetService("RunService"):IsStudio() and game:GetService("CoreGui") or game:GetService("Players").LocalPlayer.PlayerGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -4502,7 +4502,7 @@ function Library:Window(p)
 				close:Play()
 				close.Completed:Wait()
 				Shadow_1.Visible = false
-			else
+			else	
 				Shadow_1.Visible = true  
 				local open = tw({
 					v = Background_1,
@@ -4520,8 +4520,8 @@ function Library:Window(p)
 			if not firsttime then
 				firsttime = true
 				Tabs:Notify({
-					Title = '⚡ Race Clicker - Auto',
-					Desc = 'Press the <font color="#ffec45ff" size="14">('..tostring(Keybind):gsub("Enum.KeyCode.", "")..')</font> button to hide and show the UI',
+					Title = '⚡ Auto Farm Systems',
+					Desc = 'Press the ('..tostring(Keybind):gsub("Enum.KeyCode.", "")..')</font> button to hide and show the UI',
 					Time = 10
 				})
 			end
